@@ -1,0 +1,6 @@
+--2017-07-15 20:14:55--  https://raw.githubusercontent.com/snwfdhmp/duck-repo/master/go.duckling
+Resolving raw.githubusercontent.com... 151.101.120.133
+Connecting to raw.githubusercontent.com|151.101.120.133|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2017-07-15 20:14:55 ERROR 404: Not Found.
+

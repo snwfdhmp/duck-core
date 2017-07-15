@@ -19,6 +19,7 @@
 			"Label":"junk",
 			"Description":"'j <path>' moves <path> to .junk",
 			"Commands":[
+				"ls -d .junk > /dev/null 2> /dev/null || mkdir .junk",
 				"mv $1 $path/.junk"
 			],
 			"Aliases":["j"]

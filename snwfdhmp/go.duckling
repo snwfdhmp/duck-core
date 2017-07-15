@@ -13,6 +13,15 @@
 				"mkdir $1",
 				"touch $1/$1.go"
 				]
+		},		{
+			"Label":"release",
+			"Description":"build a new release",
+			"Commands":[
+				"ls -d $path/release > /dev/null 2> /dev/null || mkdir $path/release",
+				"ls -d $path/release/$1 > /dev/null 2> /dev/null || mkdir $path/release/$1",
+				"go build -o $path/release/$1/$1 $main"
+				],
+			"Aliases":["rel"]
 		}
 	]
 }
