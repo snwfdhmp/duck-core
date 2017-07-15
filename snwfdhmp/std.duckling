@@ -1,0 +1,34 @@
+{
+	"Ducklings":[
+		{
+			"Label":"run",
+			"Description":"run binaries",
+			"Commands":["$path/$name"],
+			"Aliases":["r"]
+		},
+		{
+			"Label":"commit",
+			"Description":"add all files to git and commit $1",
+			"Commands":[
+				"git add *",
+				"git commit -a -m \"$1\""
+			],
+			"Aliases":["qc"]
+		},
+		{
+			"Label":"junk",
+			"Description":"'j <path>' moves <path> to .junk",
+			"Commands":[
+				"mv $1 $path/.junk"
+			],
+			"Aliases":["j"]
+		},
+		{
+			"Label":"free",
+			"Description":"Empty the .junk directory",
+			"Commands":[
+				"rm -r .junk/*"
+			]
+		}
+	]
+}
