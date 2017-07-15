@@ -48,6 +48,13 @@
 				"ls -d $1 > /dev/null 2> /dev/null || mkdir $1"
 				],
 			"Aliases":["md"]
+		},
+		{
+			"Label":"hi",
+			"Description":"prints 'hello'",
+			"Commands":[
+				"echo hello"
+				]
 		}
 	]
 }
