@@ -4,7 +4,7 @@
 			"Label":"run",
 			"Description":"run binaries",
 			"Commands":["$path/$name"],
-			"Aliases":["r"]
+			"Aliases":["r", "start"]
 		},
 		{
 			"Label":"commit",
@@ -13,7 +13,7 @@
 				"git add *",
 				"git commit -a -m \"$1\""
 			],
-			"Aliases":["qc"]
+			"Aliases":["c"]
 		},
 		{
 			"Label":"junk",
@@ -29,7 +29,25 @@
 			"Description":"Empty the .junk directory",
 			"Commands":[
 				"rm -r .junk/*"
-			]
+			],
+			"Aliases":["f"]
+		},
+		{
+			"Label":"release",
+			"Description":"build a new release",
+			"Commands":[
+				"ls -d $path/release > /dev/null 2> /dev/null || mkdir $path/release",
+				"cp $path/$name $path/$release/$1"
+				],
+			"Aliases":["rel"]
+		},
+		{
+			"Label":"mkdir",
+			"Description":"mkdir a directory if it doesn't exist",
+			"Commands":[
+				"ls -d $1 > /dev/null 2> /dev/null || mkdir $1"
+				],
+			"Aliases":["md"]
 		}
 	]
 }

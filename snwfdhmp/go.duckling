@@ -1,27 +1,19 @@
 {
 	"Ducklings":[
 		{
-			"Label":"compile",
+			"Label":"build",
 			"Description":"compile project",
 			"Commands":["go build -o $name $main"],
-			"Aliases":["build", "c"]
+			"Aliases":["b"]
 		},
 		{
-			"Label":"create",
+			"Label":"pack",
 			"Description":"create necessary files for a new package",
 			"Commands":[
 				"mkdir $1",
 				"touch $1/$1.go"
-				]
-		},		{
-			"Label":"release",
-			"Description":"build a new release",
-			"Commands":[
-				"ls -d $path/release > /dev/null 2> /dev/null || mkdir $path/release",
-				"ls -d $path/release/$1 > /dev/null 2> /dev/null || mkdir $path/release/$1",
-				"go build -o $path/release/$1/$1 $main"
 				],
-			"Aliases":["rel"]
+			"Aliases":["p"]
 		}
 	]
 }
