@@ -3,7 +3,7 @@
 		{
 			"Label":"build",
 			"Description":"compile project",
-			"Commands":["gpp -o $name $main"],
+			"Commands":["g++ -o $name $main"],
 			"Aliases":["b"]
 		},
 		{
