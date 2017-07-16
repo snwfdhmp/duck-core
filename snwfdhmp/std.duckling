@@ -16,6 +16,14 @@
 			"Aliases":["c"]
 		},
 		{
+			"Label":"quick-commit",
+			"Description":"add all files to git and commit 'quick-commit'",
+			"Commands":[
+				"@ commit 'quick-commit'"
+			],
+			"Aliases":["qc"]
+		},
+		{
 			"Label":"release",
 			"Description":"build a new release",
 			"Commands":[
