@@ -1,10 +1,10 @@
 {
 	"Ducklings":[
 		{
-			"Label":"run",
-			"Description":"run binaries",
+			"Label":"exec",
+			"Description":"execute binaries",
 			"Commands":["$path/$name"],
-			"Aliases":["r", "start"]
+			"Aliases":["e", "execute"]
 		},
 		{
 			"Label":"commit",
