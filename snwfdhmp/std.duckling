@@ -19,7 +19,7 @@
 			"Label":"quick-commit",
 			"Description":"add all files to git and commit 'quick-commit'",
 			"Commands":[
-				"@ commit 'quick-commit'"
+				"@ commit \"quick-commit\""
 			],
 			"Aliases":["qc"]
 		},
