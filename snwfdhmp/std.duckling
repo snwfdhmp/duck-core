@@ -24,6 +24,22 @@
 			"Aliases":["qc"]
 		},
 		{
+			"Label":"push",
+			"Description":"push to git repo",
+			"Commands":[
+				"git push"
+			]
+		},
+		{
+			"Label":"quick-commit-push",
+			"Description":"quick-commit then push",
+			"Commands":[
+				"@ quick-commit",
+				"@ push"
+			],
+			"Aliases":["qcp"]
+		},
+		{
 			"Label":"release",
 			"Description":"build a new release",
 			"Commands":[
