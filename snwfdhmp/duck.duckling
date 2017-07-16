@@ -1,4 +1,8 @@
 {
+	"Dependencies":[
+		"snwfdhmp/go",
+		"snwfdhmp/git"
+	],
 	"Ducklings":[
 		{
 			"Label":"publish",
