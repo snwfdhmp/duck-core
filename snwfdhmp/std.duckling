@@ -19,8 +19,9 @@
 			"Label":"release",
 			"Description":"build a new release",
 			"Commands":[
-				"ls -d $path/release > /dev/null 2> /dev/null || mkdir $path/release",
-				"cp $path/$name $path/$release/$1"
+				"@ mkdir $path/release",
+				"@ build",
+				"cp $path/$name $path/release/$1"
 				],
 			"Aliases":["rel"]
 		},
