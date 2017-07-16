@@ -8,13 +8,13 @@
 			"Label":"publish",
 			"Description":"publish a new version of duck",
 			"Commands":[
-				"go build -o $path/release/$1 $main",
+				"@ mkdir $path/release",
+				"@ build",
+				"cp $path/$name $path/release/$1"
 				"tar -czf latest.tar.gz src",
-				"git add *",
-				"git commit -a -m 'release: $1'",
-				"git push origin master"
-			],
-			"Aliases":["e", "execute"]
+				"@ commit \"release: $1\"",
+				"@ push"
+			]
 		}
 	]
 }
