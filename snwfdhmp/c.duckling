@@ -3,23 +3,23 @@
 		{
 			"Label":"build",
 			"Description":"compile project",
-			"Commands":["go build -o $name $main"],
+			"Commands":["gcc -o $name $main"],
 			"Aliases":["b"]
 		},
 		{
 			"Label":"pack",
-			"Description":"create a new package",
+			"Description":"create a new $1.c & $1.h",
 			"Commands":[
-				"mkdir $1",
-				"touch $1/$1.go"
+				"touch $1.c",
+				"touch $1.h"
 				],
 			"Aliases":["p"]
 		},
 		{
 			"Label":"run",
-			"Description":"go run your project",
+			"Description":"run your project",
 			"Commands":[
-				"go run $main"
+				"$path/$name"
 				],
 			"Aliases":["r"]
 		}
