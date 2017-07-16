@@ -10,7 +10,7 @@
 			"Commands":[
 				"@ mkdir $path/release",
 				"@ build",
-				"cp $path/$name $path/release/$1"
+				"cp $path/$name $path/release/$1",
 				"tar -czf latest.tar.gz src",
 				"@ commit \"release: $1\"",
 				"@ push"
