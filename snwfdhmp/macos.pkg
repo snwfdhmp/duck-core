@@ -3,7 +3,7 @@
 		{
 			"Label":"notify",
 			"Description":"send a notification [$1:title|$2:text]",
-			"Commands":["osascript -e 'display notification \"$1\" with title \"$2\"'"],
+			"Commands":["osascript -e 'display notification \"$2\" with title \"$1\"'"],
 			"Aliases":["b"]
 		}
 	]
