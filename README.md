@@ -1,8 +1,8 @@
-# duck-repo : @core
+# duck-repo : [@core]() ![logo][logo-xs]
 
 ## Introduction
 
-@core is the official [duck](https://github.com/snwfdhmp/duck) repository.
+[@core]() is the official [duck](https://github.com/snwfdhmp/duck) repository.
 
 ## Packages
 
@@ -23,3 +23,5 @@ You can add your repo to it by making a pull request
 ## Author
 
 - [snwfdhmp](https://github.com/snwfdhmp)
+
+[logo-xs]: https://www.github.com/snwfdhmp/duck/raw/master/ressources/img/logo-xs.png "Logo"
