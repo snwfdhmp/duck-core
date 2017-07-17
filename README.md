@@ -8,13 +8,13 @@
 
 | Name | Description |
 | --- | --- |
-| snwfdhmp/std | common lings for everyday use |
-| snwfdhmp/git | lings that speed up git use |
-| snwfdhmp/go | go toolset (build&run, pack) |
-| snwfdhmp/junk | manage junk code using .junk |
-| snwfdhmp/c | c toolset (build&run, pack) |
-| snwfdhmp/cpp | c++ toolset (build&run, class) |
-| snwfdhmp/duck | lings for duck maintainers |
+| [snwfdhmp/std](blob/master/snwfdhmp/std.pkg) | common lings for everyday use |
+| [snwfdhmp/git](blob/master/snwfdhmp/git.pkg) | lings that speed up git use |
+| [snwfdhmp/go](blob/master/snwfdhmp/go.pkg) | go toolset (build&run, pack) |
+| [snwfdhmp/junk](blob/master/snwfdhmp/junk.pkg) | manage junk code using .junk |
+| [snwfdhmp/c](blob/master/snwfdhmp/c.pkg) | c toolset (build&run, pack) |
+| [snwfdhmp/cpp](blob/master/snwfdhmp/cpp.pkg) | c++ toolset (build&run, class) |
+| [snwfdhmp/duck](blob/master/snwfdhmp/duck.pkg) | lings for duck maintainers |
 
 ## Contributing
 
