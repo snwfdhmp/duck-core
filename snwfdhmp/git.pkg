@@ -21,7 +21,7 @@
 			"Label":"commit-push",
 			"Description":"add *; commit $1; push",
 			"Commands":[
-				"@ commit $1",
+				"@ commit \"$1\"",
 				"@ push"
 			],
 			"Aliases":["gcp"]
