@@ -1,5 +1,5 @@
 {
-	"Ducklings":[
+	"Lings":[
 		{
 			"Label":"commit",
 			"Description":"add all files to git and commit $1",

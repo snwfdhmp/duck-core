@@ -2,7 +2,7 @@
 	"Dependencies":[
 		"snwfdhmp/std"
 	],
-	"Ducklings":[
+	"Lings":[
 		{
 			"Label":"junk",
 			"Description":"'j <path>' moves <path> to .junk",
