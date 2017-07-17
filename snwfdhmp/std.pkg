@@ -10,8 +10,8 @@
 			"Label":"release",
 			"Description":"build a new release",
 			"Commands":[
-				"@ mkdir $path/release",
 				"@ build",
+				"@ mkdir $path/release",
 				"cp $path/$name $path/release/$1"
 				],
 			"Aliases":["rel"]
