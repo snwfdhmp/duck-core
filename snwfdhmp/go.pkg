@@ -3,16 +3,24 @@
 		{
 			"Label":"build",
 			"Description":"compile project",
-			"Commands":["go build -o $name $main"],
+			"Commands":["go build $main"],
+			"Aliases":["b"]
+		},
+		{
+			"Label":"struct",
+			"Description":"create repo struct",
+			"Commands":[
+				"mkdir pkg cmd .junk"
+			],
 			"Aliases":["b"]
 		},
 		{
 			"Label":"pack",
 			"Description":"create a new package",
 			"Commands":[
-				"mkdir $1",
-				"touch $1/$1.go"
-				],
+				"mkdir pkg/$1",
+				"touch pkg/$1/$1.go"
+			],
 			"Aliases":["p"]
 		},
 		{
@@ -20,7 +28,7 @@
 			"Description":"go run your project",
 			"Commands":[
 				"go run $main"
-				],
+			],
 			"Aliases":["r"]
 		}
 	]
