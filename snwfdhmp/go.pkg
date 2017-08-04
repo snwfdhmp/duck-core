@@ -3,16 +3,19 @@
 		{
 			"Label":"build",
 			"Description":"compile project",
-			"Commands":["go build $main"],
+			"Commands":["go install $main"],
 			"Aliases":["b"]
 		},
 		{
 			"Label":"struct",
 			"Description":"create repo struct",
 			"Commands":[
-				"mkdir pkg cmd .junk"
-			],
-			"Aliases":["b"]
+				"mkdir pkg cmd",
+				"mkdir pkg/$name",
+				"touch pkg/$name/$name.go",
+				"touch $main",
+				"touch README.md"
+			]
 		},
 		{
 			"Label":"pack",
